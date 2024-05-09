@@ -49,11 +49,11 @@ const UpdatePlace = () => {
   const [formState, inputHandler, setFormData] = useForm(
     {
       title: {
-        value: identifiedPlace.title,
+        value: identifiedPlace ? identifiedPlace.title : undefined,
         isValid: true,
       },
       description: {
-        value: identifiedPlace.description,
+        value: identifiedPlace ? identifiedPlace.description : undefined,
         isValid: true,
       },
     },
