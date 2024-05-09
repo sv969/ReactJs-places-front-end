@@ -67,7 +67,7 @@ const UpdatePlace = () => {
   }
 
   const placeUpdateSubmitHandler = (event) => {
-    event.prevantDefalut();
+    event.preventDefault();
     console.log(formState.Inputs);
   };
 
